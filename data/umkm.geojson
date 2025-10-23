@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Nama": "Toko Kopi Lestari",
+        "Kategori": "UMKM",
+        "Alamat": "Jl. Medan - Tebing Tinggi No.45, Perbaungan",
+        "Deskripsi": "Menjual kopi lokal dan olahan biji kopi khas Serdang Bedagai.",
+        "LinkFoto": "https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cafe.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.958,
+          3.575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nama": "Lahan Padi Sido Makmur",
+        "Kategori": "Pertanian",
+        "Alamat": "Desa Melati, Kecamatan Perbaungan",
+        "Deskripsi": "Area pertanian produktif dengan sistem irigasi sederhana.",
+        "LinkFoto": "https://upload.wikimedia.org/wikipedia/commons/6/68/Paddy_field_in_Indonesia.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.95,
+          3.58
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nama": "Pantai Bahagia Perbaungan",
+        "Kategori": "Wisata",
+        "Alamat": "Pantai Cermin, Perbaungan",
+        "Deskripsi": "Destinasi wisata pantai dengan panorama laut yang indah.",
+        "LinkFoto": "https://upload.wikimedia.org/wikipedia/commons/8/88/Beach_in_Indonesia.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.94,
+          3.57
+        ]
+      }
+    }
+  ]
+}
