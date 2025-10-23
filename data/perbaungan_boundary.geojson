@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Nama": "Kecamatan Perbaungan",
+        "Provinsi": "Sumatera Utara",
+        "Kabupaten": "Serdang Bedagai",
+        "Keterangan": "Batas wilayah perkiraan untuk tampilan WebGIS (non-resmi)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [98.915, 3.555],
+          [98.915, 3.615],
+          [98.940, 3.630],
+          [98.970, 3.640],
+          [98.990, 3.625],
+          [99.000, 3.590],
+          [98.995, 3.560],
+          [98.970, 3.540],
+          [98.940, 3.530],
+          [98.920, 3.540],
+          [98.915, 3.555]
+        ]]
+      }
+    }
+  ]
+}
