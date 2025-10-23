@@ -34,6 +34,20 @@
           }
         }).addTo(map);
       });
+    // Tambahkan batas wilayah Perbaungan
+fetch('data/perbaungan_boundary.geojson')
+  .then(res => res.json())
+  .then(boundary => {
+    L.geoJSON(boundary, {
+      style: {
+        color: "#2f8f5b",
+        fillColor: "#8fd694",
+        fillOpacity: 0.25,
+        weight: 2
+      }
+    }).addTo(map);
+  });
+
   </script>
 </body>
 </html>
