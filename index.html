@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>WebGIS UMKM dan Potensi Desa Kecamatan Perbaungan</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    #map { height: 100vh; width: 100%; }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">WebGIS UMKM dan Potensi Desa Kecamatan Perbaungan</h2>
+  <div id="map"></div>
+  <script>
+    var map = L.map('map').setView([3.574, 98.956], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    fetch('data/umkm.geojson')
+      .then(res => res.json())
+      .then(data => {
+        L.geoJSON(data, {
+          onEachFeature: function (feature, layer) {
+            layer.bindPopup(
+              '<b>' + feature.properties.Nama + '</b><br>' +
+              'Kategori: ' + feature.properties.Kategori + '<br>' +
+              'Alamat: ' + feature.properties.Alamat + '<br>' +
+              '<img src="' + feature.properties.LinkFoto + '" width="150">' +
+              '<br>' + feature.properties.Deskripsi
+            );
+          }
+        }).addTo(map);
+      });
+  </script>
+</body>
+</html>
